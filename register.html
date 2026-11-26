@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFest 2026 | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <h1 class="logo">TechFest <span>2026</span></h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a class="active" href="register.html">Register</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container page-content">
+
+    <section class="page-heading">
+        <p class="eyebrow">BE A PART OF THE EXPERIENCE</p>
+        <h2>Student Registration</h2>
+        <p>Fill in your details to register for TechFest 2026.</p>
+    </section>
+
+    <section class="form-container">
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name"
+                    placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                    placeholder="Enter 10-digit phone number"
+                    pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="college">College / Institution</label>
+                <input type="text" id="college"
+                    placeholder="Enter your college name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event">Choose Your Event</label>
+                <select id="event" required>
+                    <option value="">-- Select an Event --</option>
+                    <option>Code Clash</option>
+                    <option>Robo Wars</option>
+                    <option>Web Design Challenge</option>
+                    <option>Tech Quiz</option>
+                    <option>Project Expo</option>
+                    <option>Gaming Arena</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Message (Optional)</label>
+                <textarea id="message"
+                    placeholder="Tell us something..."
+                    rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn">
+                Submit Registration
+            </button>
+
+        </form>
+
+        <div id="confirmation" class="confirmation" hidden>
+            <div class="success-icon">✓</div>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering for TechFest 2026.</p>
+            <p id="confirmationDetails"></p>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>©️ 2026 TechFest | Contact: techfest@example.com</p>
+</footer>
+
+</body>
+</html>
